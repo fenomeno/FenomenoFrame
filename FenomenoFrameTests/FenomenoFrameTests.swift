@@ -71,7 +71,6 @@ class FenomenoFrameTests: XCTestCase {
     view.height = 50
     view.right = 130
     XCTAssertEqual(view.frame.origin.x, 130 - 100)
-    
   }
   
   func testViewBottom_get() {
@@ -80,16 +79,14 @@ class FenomenoFrameTests: XCTestCase {
     view.height = 40
     view.frame.origin.y = 120
     XCTAssertEqual(view.bottom, 40 + 120)
-    
   }
   
   func testViewBottom_set() {
     let view = UIView()
     view.width = 70
     view.height = 40
-    view.top = 180
+    view.bottom = 180
     XCTAssertEqual(view.frame.origin.y, 180 - 40)
-    
   }
   
   
